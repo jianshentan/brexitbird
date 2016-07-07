@@ -1,14 +1,11 @@
 {
-  "name": "clumsy-bird",
+  "name": "Brexit Bird",
   "version": "0.1.0",
   "description": "Clumsy Bird - A MelonJS port of the famous Flappy Bird game",
-  "homepage": "http://ellisonleao.github.io/clumsy-bird/",
+  "homepage": "brexitbird.azurewebsites.net",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ellisonleao/clumsy-bird"
-  },
-  "bugs": {
-    "url": "https://github.com/ellisonleao/clumsy-bird/issues"
+    "url": "https://github.com/jianshentan/brexit-bird"
   },
   "licenses": [
     {
@@ -17,8 +14,8 @@
     }
   ],
   "author": {
-    "name": "Ellison Leão",
-    "email": "ellisonleao@gmail.com"
+    "name": "Hello Velocity",
+    "email": "friend@hellovelocity.com"
   },
   "engines": {
     "node": ">= 0.8.0"

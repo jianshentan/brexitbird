@@ -1,9 +1,15 @@
-/* TEAM */
+/* Developer */
 
 Developer: Ellison Leão 
 Site: https://ellisonleao.github.io, https://github.com/ellisonleao
 Twitter: @ellisonleao
 Location: Curitiba, Brazil
+
+/* Customization by Hello Velocity */
+
+Site: http://www.hellovelocity.com
+Twitter: @hellovelocity
+Location: New York, USA
 
 /* SITE */
 
