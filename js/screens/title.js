@@ -9,6 +9,8 @@ game.TitleScreen = me.ScreenObject.extend({
 
     onResetEvent: function() {
         me.audio.stop("theme");
+        me.audio.stop("gameover");
+
         game.data.newHiScore = false;
 
         me.game.world.addChild(new BackgroundLayer('bg', 1));

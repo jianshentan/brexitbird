@@ -113,9 +113,9 @@ var Tweet = me.GUI_Object.extend({
     },
 
     onClick: function(event) {
-        var shareText = 'Just made ' + game.data.steps + ' steps on Clumsy Bird! Can you beat me? Try online here!';
-        var url = 'http://ellisonleao.github.io/clumsy-bird/';
-        var hashtags = 'clumsybird,melonjs'
+        var shareText = 'I left the EU but can you escape the REFERENDUM?! (' + game.data.steps + 'buses dodged on BrexitBird)';
+        var url = 'http://www.brexitbird.com';
+        var hashtags = 'brexit'
         window.open('https://twitter.com/intent/tweet?text=' + shareText + '&hashtags=' + hashtags + '&count=' + url + '&url=' + url, 'Tweet!', 'height=300,width=400')
         return false;
     }

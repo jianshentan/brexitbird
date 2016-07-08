@@ -5,6 +5,15 @@ game.GameOverScreen = me.ScreenObject.extend({
     },
 
     onResetEvent: function() {
+        me.audio.stop("theme");
+        // gameover music
+        me.audio.play("gameover", true);
+          // lower audio volume on firefox browser
+        var vol = me.device.ua.contains("Firefox") ? 0.3 : 0.5;
+        me.audio.setVolume(vol);
+        this._super(me.ScreenObject, 'init');
+
+
         //save section
         this.savedData = {
             score: game.data.score,
