@@ -40,7 +40,7 @@ game.GameOverScreen = me.ScreenObject.extend({
         var gImageBoard = me.loader.getImage('gameoverbg');
         me.game.world.addChild(new me.Sprite(
             me.video.renderer.getWidth()/2 - gImageBoard.width/2,
-            me.video.renderer.getHeight()/2 - gImageBoard.height/2,
+            me.video.renderer.getHeight()/2 - gImageBoard.height/2 - 20,
             {image: gImageBoard}
         ), 10);
 
@@ -56,11 +56,11 @@ game.GameOverScreen = me.ScreenObject.extend({
         //var buttonsHeight = me.video.renderer.getHeight() / 2 + 200;
 
         // share button
-        this.share = new Share(me.video.renderer.getWidth()/2 + 70, me.game.viewport.height/2 + 20);//buttonsHeight);
+        this.share = new Share(me.video.renderer.getWidth()/2 + 70, me.game.viewport.height/2 - 10);//buttonsHeight);
         me.game.world.addChild(this.share, 12);
 
         //tweet button
-        this.tweet = new Tweet(me.video.renderer.getWidth()/2 + 70,  me.game.viewport.height/2 + 100);//buttonsHeight);
+        this.tweet = new Tweet(me.video.renderer.getWidth()/2 + 70,  me.game.viewport.height/2 + 80);//buttonsHeight);
         me.game.world.addChild(this.tweet, 12);
 
         // add the dialog witht he game information
@@ -80,9 +80,9 @@ game.GameOverScreen = me.ScreenObject.extend({
                 // zero size
                 // renderable
                 this._super(me.Renderable, 'init', [0, 0, 100, 100]);
-                this.font = new me.Font('helvetica', 40, 'black', 'left');
-                this.steps = 'Steps: ' + game.data.steps.toString();
-                this.topSteps= 'Higher Step: ' + me.save.topSteps.toString();
+                this.font = new me.Font('gamefont', 30, '#c10c06', 'center');
+                this.steps = 'Score: ' + game.data.steps.toString();
+                this.topSteps= 'High Score: ' + me.save.topSteps.toString();
             },
 
             draw: function (renderer) {
@@ -94,16 +94,16 @@ game.GameOverScreen = me.ScreenObject.extend({
                 this.font.draw(
                     renderer,
                     this.steps,
-                    me.game.viewport.width/2 + 70,// - stepsText.width/2 - 60,
-                    me.game.viewport.height/2 - 120
+                    me.game.viewport.width/2 + 150,// - stepsText.width/2 - 60,
+                    me.game.viewport.height/2 - 180
                 );
 
                 //top score
                 this.font.draw(
                     renderer,
                     this.topSteps,
-                    me.game.viewport.width/2 + 15,// - stepsText.width/2 - 60,
-                    me.game.viewport.height/2 - 80
+                    me.game.viewport.width/2 + 150,// - stepsText.width/2 - 60,
+                    me.game.viewport.height/2 - 140
                 );
             }
         }));
