@@ -27,7 +27,7 @@ game.TitleScreen = me.ScreenObject.extend({
         //logo
         var logoImg = me.loader.getImage('logo');
         this.logo = new me.Sprite(
-            me.game.viewport.width/2 - 170,
+            me.game.viewport.width/2 - 225,
             -logoImg,
             {image: logoImg}
         );
@@ -35,7 +35,7 @@ game.TitleScreen = me.ScreenObject.extend({
 
         var that = this;
         var logoTween = me.pool.pull("me.Tween", this.logo.pos)
-            .to({y: me.game.viewport.height/2 - 100}, 1000)
+            .to({y: me.game.viewport.height/2 - 150}, 1000)
             .easing(me.Tween.Easing.Exponential.InOut).start();
 
         this.ground1 = me.pool.pull("ground", 0, me.video.renderer.getHeight() - 96);
@@ -56,7 +56,7 @@ game.TitleScreen = me.ScreenObject.extend({
             draw: function (renderer) {
                 var measure = this.font.measureText(renderer, this.text);
                 var xpos = me.game.viewport.width/2 - measure.width/2;
-                var ypos = me.game.viewport.height/2 + 50;
+                var ypos = me.game.viewport.height/2 + 100;
                 this.font.draw(renderer, this.text, xpos, ypos);
             }
         })), 12);

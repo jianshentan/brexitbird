@@ -1,5 +1,5 @@
 body {
-  background-color: #0099cc;
+  background-color: #ffffff;
   color: #fff;
 
   /* Allow mouse dragging. */
@@ -36,9 +36,11 @@ body {
   text-align: center;
 }
 
+/*
 #share .fb-share-button iframe {
   margin-top: -4px;
 }
+*/
 
 @font-face {
   font-family: 'gamefont';

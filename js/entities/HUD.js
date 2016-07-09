@@ -84,20 +84,19 @@ var Share = me.GUI_Object.extend({
     },
 
     onClick: function(event) {
-        var shareText = 'Just made ' + game.data.steps + ' steps on Clumsy Bird! Can you beat me? Try online here!';
-        var url = 'http://ellisonleao.github.io/clumsy-bird/';
-        FB.ui(
-            {
+        var shareText = 'I left the EU but can you escape the REFERENDUM?! (' + game.data.steps + 'buses dodged on BrexitBird)';
+        var url = 'http://www.brexitbird.com';
+
+        FB.ui({
              method: 'feed',
-             name: 'My Clumsy Bird Score!',
+             name: 'Can you beat my BrexitBird score!',
              caption: "Share to your friends",
              description: (
                     shareText
              ),
              link: url,
              picture: 'http://ellisonleao.github.io/clumsy-bird/data/img/clumsy.png'
-            }
-        );
+            });
         return false;
     }
 
