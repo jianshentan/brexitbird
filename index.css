@@ -14,7 +14,14 @@ body {
   touch-action: none;
 
   /* Allow canvas to hit the edges of the browser viewport. */
-  margin: 36px;
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+@media only screen and (max-device-width: 480px) {
+  body {
+    margin-top: 0px;
+  }
 }
 
 #screen canvas {
