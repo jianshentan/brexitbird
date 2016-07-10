@@ -14,7 +14,7 @@ body {
   touch-action: none;
 
   /* Allow canvas to hit the edges of the browser viewport. */
-  margin: 0;
+  margin: 36px;
 }
 
 #screen canvas {

@@ -12,7 +12,7 @@ var game = {
                 wrapper : "screen",
                 renderer : me.video.CANVAS,
                 scale : "auto",
-                scaleMethod : "fit"
+                scaleMethod : "flex"
             })) {
             alert("Your browser does not support HTML5 canvas.");
             return;
