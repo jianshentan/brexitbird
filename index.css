@@ -21,7 +21,7 @@ body {
 
 @media only screen and (max-device-width: 480px) {
   body {
-    margin-top: 0px;
+    margin: 0px;
   }
 }
 
