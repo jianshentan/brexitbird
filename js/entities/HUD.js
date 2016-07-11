@@ -84,7 +84,7 @@ var Share = me.GUI_Object.extend({
     },
 
     onClick: function(event) {
-        var shareText = 'I left the EU but can you escape the REFERENDUM?! (' + game.data.steps + 'buses dodged on BrexitBird)';
+        var shareText = 'TFW when you\'re a teacup trying to get back to the EU and get hit by a bus (after dodging ' + game.data.steps + ' of them)';
         var url = 'http://www.brexitbird.com';
 
         FB.ui({
@@ -95,7 +95,7 @@ var Share = me.GUI_Object.extend({
                     shareText
              ),
              link: url,
-             picture: 'http://ellisonleao.github.io/clumsy-bird/data/img/clumsy.png'
+             picture: 'http://www.brexitbird.com/data/img/banner.png'
             });
         return false;
     }
@@ -112,7 +112,8 @@ var Tweet = me.GUI_Object.extend({
     },
 
     onClick: function(event) {
-        var shareText = 'I left the EU but can you escape the REFERENDUM?! (' + game.data.steps + 'buses dodged on BrexitBird)';
+
+        var shareText = 'TFW when you\'re a teacup trying to get back to the EU and get hit by a bus (after dodging ' + game.data.steps + ' of them)';
         var url = 'http://www.brexitbird.com';
         var hashtags = 'brexit'
         window.open('https://twitter.com/intent/tweet?text=' + shareText + '&hashtags=' + hashtags + '&count=' + url + '&url=' + url, 'Tweet!', 'height=300,width=400')
