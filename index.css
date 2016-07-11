@@ -16,6 +16,7 @@ body {
   /* Allow canvas to hit the edges of the browser viewport. */
   margin-top: 36px;
   margin-bottom: 36px;
+  font-family: Helvetica;
 }
 
 @media only screen and (max-device-width: 480px) {
