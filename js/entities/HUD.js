@@ -84,7 +84,7 @@ var Share = me.GUI_Object.extend({
     },
 
     onClick: function(event) {
-        var shareText = 'TFW when you\'re a teacup trying to get back to the EU and get hit by a bus (after dodging ' + game.data.steps + ' of them)';
+        var shareText = 'TFW when you\'re a teacup trying to get back to the EU. High score of ' + game.data.steps + ' but no victory in sight...';
         var url = 'http://www.brexitbird.com';
 
         FB.ui({
@@ -113,7 +113,7 @@ var Tweet = me.GUI_Object.extend({
 
     onClick: function(event) {
 
-        var shareText = 'TFW when you\'re a teacup trying to get back to the EU and get hit by a bus (after dodging ' + game.data.steps + ' of them)';
+        var shareText = 'TFW when you\'re a teacup trying to get back to the EU. High score of ' + game.data.steps + ' but no victory in sight...';
         var url = 'http://www.brexitbird.com';
         var hashtags = 'brexit'
         window.open('https://twitter.com/intent/tweet?text=' + shareText + '&hashtags=' + hashtags + '&count=' + url + '&url=' + url, 'Tweet!', 'height=300,width=400')
